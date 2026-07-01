@@ -16,22 +16,22 @@ Boundary Resilience: During the comparison cycle, if any array runs out of bound
 Data Integrity: The function actively monitors values at each pointer step. If an unexpected undefined is encountered (e.g., inside sparse arrays), it immediately throws an explicit error to prevent compromised or corrupted data outcomes.
 
 ## 🧪 Unit Testing
-The utility is strictly covered by 20 comprehensive test cases built with Jest to guarantee absolute runtime safety and edge-case correctness. The suite is categorized into 4 core testing dimensions:
-### 1. Happy Paths & Basic Sorting (6 Cases)
-Case 1: Merging three standard properly-sorted arrays.
-Case 2: Handling matching duplicate values scattered across different arrays.
-Case 3: Seamlessly merging arrays of entirely uneven lengths.
-Case 4: Correctly evaluating and sorting negative numbers.
-Case 5: Managing arrays that contain only a single element.
-Case 6: Merging scenarios where all arrays share identical numbers.
-### 2. Empty Arrays Handling (4 Cases)
-Case 7: Returns an empty array when all inputs are completely empty [], [], [].
-Case 8 - 10: Safely executing when one of the three collections is empty.
-### 3. Infinity & Special Cases (5 Cases)
-Case 11 - 12: Managing mathematically valid Infinity boundaries placed at the edges of the arrays.
-Case 13: Handling -Infinity priorities accurately.
-Case 14 - 15: Resolving arrays consisting exclusively of mixed Infinity and -Infinity thresholds.
-### 4. Undefined & Edge Cases (5 Cases)
-Case 16 - 18: Intentionally throwing standard descriptive errors if undefined values hide within any collection.
-Case 19: Guarding against completely missing arguments at runtime (Runtime Crash Check).
-Case 20: Successfully blocking Sparse Arrays (arrays with unassigned empty structural slots).
+The utility is strictly covered by 20 comprehensive test - Cases built with Jest to guarantee absolute runtime safety and edge-- Case correctness. The suite is categorized into 4 core testing dimensions:
+### 1. Happy Paths & Basic Sorting (6 - Cases)
+- Case 1: Merging three standard properly-sorted arrays.
+- Case 2: Handling matching duplicate values scattered across different arrays.
+- Case 3: Seamlessly merging arrays of entirely uneven lengths.
+- Case 4: Correctly evaluating and sorting negative numbers.
+- Case 5: Managing arrays that contain only a single element.
+- Case 6: Merging scenarios where all arrays share identical numbers.
+### 2. Empty Arrays Handling (4 - Cases)
+- Case 7: Returns an empty array when all inputs are completely empty [], [], [].
+- Case 8 - 10: Safely executing when one of the three collections is empty.
+### 3. Infinity & Special - Cases (5 - Cases)
+- Case 11 - 12: Managing mathematically valid Infinity boundaries placed at the edges of the arrays.
+- Case 13: Handling -Infinity priorities accurately.
+- Case 14 - 15: Resolving arrays consisting exclusively of mixed Infinity and -Infinity thresholds.
+### 4. Undefined & Edge - Cases (5 - Cases)
+- Case 16 - 18: Intentionally throwing standard descriptive errors if undefined values hide within any collection.
+- Case 19: Guarding against completely missing arguments at runtime (Runtime Crash Check).
+- Case 20: Successfully blocking Sparse Arrays (arrays with unassigned empty structural slots).
